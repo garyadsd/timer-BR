@@ -20,8 +20,8 @@ div#bottombar {
 
 <div id="bottombar">
 <center>
-<span class="expire-text" id="counter">OFFRE EXPIRE DANS 15:00</span> 
-<a href='LINK HERE' style='padding:5px;background:#f0ad4e;text-decoration:none;color:white;border:1px solid #eea236;'>Cliquez ICI</a>
+<span class="expire-text" id="counter">Oferta vence em 15:00</span> 
+<a href='LINK HERE' style='padding:5px;background:#f0ad4e;text-decoration:none;color:white;border:1px solid #eea236;'>Clique aqui</a>
 </center></div>
 
 <script>
@@ -32,7 +32,7 @@ function countdown(minutes) {
         var counter = document.getElementById("counter");
         var current_minutes = mins-1
         seconds--;
-        counter.innerHTML = "OFFRE EXPIRE DANS " + current_minutes.toString() + ":" + (seconds < 10 ? "0" : "")  + String(seconds);
+        counter.innerHTML = "Oferta vence em " + current_minutes.toString() + ":" + (seconds < 10 ? "0" : "")  + String(seconds);
         if( seconds > 0 ) {
             setTimeout(tick, 1000);
         } else {
